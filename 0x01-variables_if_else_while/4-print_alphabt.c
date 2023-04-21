@@ -6,7 +6,6 @@
 int main(void)
 {
 	char be;
-
 	for (be = 'a'; be <= 'z'; be++)
 	{
 	if (be != 'q' && be != 'e')
