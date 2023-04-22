@@ -7,7 +7,7 @@ int main(void)
 {
 	int x;
 
-	for (x = 20; x  <= 30; ++)
+	for (x = 20; x <= 30; x ++)
 	{
 		putchar((x % 20) + '0');
 		if (x == 30)
