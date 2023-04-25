@@ -14,7 +14,7 @@ while (x <= 9)
 {
 	for (be = 'a'; be <= 'z'; be++)
 	{
-	_putchar(x);
+	_putchar(be);
 	}
 	_putchar('\n');
 
