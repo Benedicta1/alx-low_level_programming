@@ -18,6 +18,6 @@ while (x <= 9)
 	}
 	_putchar('\n');
 
-	be++;
+	x++;
 }
 }
