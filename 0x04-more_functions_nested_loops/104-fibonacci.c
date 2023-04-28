@@ -4,7 +4,7 @@
  * main - a program that finds and prints the first 98 Fibonacci numbers,
  * Return: Always 0
  */
-nt main(void)
+int main(void)
 {
 	int count = 2;
 	long int a = 1, b = 2;
