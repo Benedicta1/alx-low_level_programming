@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <main.h>
 /**
  * main - a program that finds and prints largest prime factor
  * Description: points the largest prime factor of the number 612852475143
