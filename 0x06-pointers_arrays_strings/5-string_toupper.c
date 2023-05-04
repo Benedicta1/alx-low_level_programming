@@ -15,3 +15,4 @@ char *string_toupper(char *s)
 			s[b] = s[b] - 32;
 	}
 	return (s);
+}
