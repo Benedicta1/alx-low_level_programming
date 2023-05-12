@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	int multiply = 0;
 	char x[] = "Error";
 
-	if (argc != 4)
+	if (argc != 3)
 	{
 		printf("%s\n", x);
 		return (1);
