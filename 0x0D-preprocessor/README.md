@@ -1,5 +1,4 @@
 0x0D. C - Preprocessor
-The Task
 
 0. Object-like Macro
 Create a header file that defines a macro named SIZE
