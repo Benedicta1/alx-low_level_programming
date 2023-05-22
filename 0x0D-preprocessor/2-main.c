@@ -7,5 +7,5 @@
 
 int main(void)
 {
-	printf("Name of file : %s\n", __FILE__);
+	printf("Name of file: %s\n", __FILE__);
 }
