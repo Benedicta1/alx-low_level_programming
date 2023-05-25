@@ -10,6 +10,7 @@
  * Description: if separator is NULL, don’t print it
  * If one of the string is NULL, print (nil) instead
  */
+
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list strings;
@@ -29,5 +30,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 	}
 	printf("\n");
-	va_end(strings)
+	va_end(strings);
 }
