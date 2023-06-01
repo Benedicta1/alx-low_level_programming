@@ -44,8 +44,13 @@ Prototype: void free_list(list_t *head);
 
 5. The Hare and the Tortoise
 
+<<<<<<< HEAD
 Write a function that prints You're beat! and yet, you must allow,\nI 
 bore my house upon my back!\n before the main function is executed.
+=======
+Write a function that prints You're beat! and yet, you must allow,
+\nI bore my house upon my back!\n before the main function is executed.
+>>>>>>> afed93f5d875ef6cfe6da9d5c7b2ad94fd0cbfdc
 
 You are allowed to use the printf function
 
