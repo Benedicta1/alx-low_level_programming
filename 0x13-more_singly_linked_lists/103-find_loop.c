@@ -20,7 +20,7 @@ listint_t *find_listint_loop(listint_t *head)
 		red = red->next;
 		if (green == red)
 		{
-			red = green;
+			red = head;
 			while (red != green)
 			{
 				red = red->next;
@@ -31,3 +31,4 @@ listint_t *find_listint_loop(listint_t *head)
 	}
 	return (NULL);
 }
+
