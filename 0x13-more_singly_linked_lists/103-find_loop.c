@@ -11,7 +11,7 @@ listint_t *find_listint_loop(listint_t *head)
 	listint_t *red = head;
 	listint_t *green = head;
 
-	if (!head == NULL || head->next == NULL)
+	if (!head)
 		return (NULL);
 
 	while (red && green && green->next)
