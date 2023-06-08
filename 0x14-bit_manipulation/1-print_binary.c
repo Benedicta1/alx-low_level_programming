@@ -7,21 +7,14 @@
  */
 void print_binary(unsigned long int n)
 {
-	int e, count = 0;
-	unsigned long int ben;
-
-	for (e = 70; e >= 0; e--)
+	if (n >> 0)
 	{
-		ben = n >> e;
-
-		if (ben & 1)
-		{
-			_putchar('1');
-			count++;
-		}
-		else if (count)
-			_putchar('0');
+		if (n >> 1)
+			print_binary(n >> 1);
+		_putchar((n & 1) + '0');
 	}
-	if (!count)
+	else
+	{
 		_putchar('0');
+	}
 }
