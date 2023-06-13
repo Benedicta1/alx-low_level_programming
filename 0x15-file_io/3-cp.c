@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 
-		numero2 = write(file_to, text, numero2);
+		numero2 = write(file_to, text, numero1);
 		if (numero2 < numero1)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
