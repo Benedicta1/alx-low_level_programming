@@ -2,29 +2,27 @@
 """Island Perimeter"""
 
 
+
 def island_perimeter(grid):
-    """Get the result of the  perimeter of an "island" of 1s in an "ocean" of 0s.
 
-    The  2D grid of 0s and 1s, get the result of the perimeter of the contiguous area of
-    1, with negative space in 0s.
-
+    """This returns the perimiter of an island.
+    The grid represents water by 0 and land by 1.
     Args:
-        grid (list of lists of ints): 2D list representation of island
-
-    Attributes:
-        perimeter (int): The total units of cell length around island edge
-
+        grid (list): This is the lists of integers representing an island.
+    Returns:
+        The perimeter of the island is defined in grid.
     """
-    perimeter = 0
-    for a in range(len(grid)):
-        for b in range(len(grid[0])):
-            if grid[a][b]:
-                if b == 0 or not grid[a][b - 1]:
-                    perimeter += 1
-                    if b == len(grid[0]) - 1 or not grid[a][b + 1]:
-                        perimeter += 1
-                        if a == 0 or not grid[a - 1] [b]:
-                            perimeter += 1
-                            if a == len(grid) - 1 or not grid[a + 1] [b]:
-                                perimeter += 1
-                                return perimeter
+    width = len(grid[0])
+    height = len(grid)
+    edges = 0
+    size = 0
+
+    for a in range(height):
+        for b in range(width):
+            if grid[a][b] == 1:
+                size += 1
+                if (b > 0 and grid[a][b - 1] == 1):
+                    edges += 1
+                if (a > 0 and grid[a - 1][b] == 1):
+                    edges += 1
+                    return size * 4 - edged * 2
