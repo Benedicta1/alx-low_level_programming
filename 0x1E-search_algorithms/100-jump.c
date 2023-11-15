@@ -8,8 +8,7 @@ size_t min(size_t a, size_t b);
  * min - returns the minimum of two size_t values
  * @a: the first value
  * @b: the second value
- *
- * Return: `a` if lower or equal to `b`, `b` otherwise
+ * Return: if a lower or equal to `b`, `b` otherwise
  */
 size_t min(size_t a, size_t b)
 {
@@ -17,7 +16,7 @@ size_t min(size_t a, size_t b)
 }
 
 /**
- * jump_search - searches for a value in a sorted array of integers
+ * jump_search - value in a sorted array of integers
  * @array: pointer to the first element 
  * @size: number of elements in array
  * @value: value to search for
